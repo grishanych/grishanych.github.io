@@ -1,76 +1,60 @@
 #blog {
-margin: 0 auto;
-height: 703px;
-max-width: 1920px;
-overflow: hidden;
-background: url(../images/blog/bg_full_all.png);
-background-repeat: no-repeat;
-background-position: top center;
-margin-top: -35px;
-
-
-
+	margin: 0 auto;
+	height: 703px;
+	max-width: 1920px;
+	overflow: hidden;
+	background: url(../images/blog/bg_full_all.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-top: -35px;
 
 .info{
-margin: 200px 0 0 30px;
-max-width: 400px;
-// background-color: red;
+	margin: 200px 0 0 30px;
+	max-width: 400px;
 }	
-@media(max-width:660px){
-    
-    .info{ 
-        margin: 50px 0 0 30px;
-
-
+		@media (max-width:660px){
+	       .info{ 
+	        	margin: 50px 0 0 30px;
 }
 }
 
 h1 {
-// position: absolute;
-font-family: 'Open Sans';
-font-size: 20px;
-font-weight: bold;
-letter-spacing: 6px;
-color: #2c2e37;
-// padding: 254px 0 0 15px;
-text-transform: uppercase;
-
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	color: #2c2e37;
+	text-transform: uppercase;
 }
 
 p {
-// position: absolute;
-font-family:'Open Sans';
-font-size: 16px;
-// font-weight: bold;
-color: #949494;
-padding-top:20px;
+	font-family:'Open Sans';
+	font-size: 16px;
+	color: #949494;
+	padding-top:20px;
 }
 
 button {
-
-font-family: 'Open Sans';
-font-weight: bold;
-font-size: 12px;
-letter-spacing: 3px;
-color: #ffffff;
-margin-top:20px;
-text-transform: uppercase;
-border: 3px solid #36aeea;
-padding: 15px 26px;
-border-radius: 2px;
-background-image: none; 
-background: #36aeea;
-cursor: pointer;
-	}
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 3px;
+	color: #ffffff;
+	margin-top:20px;
+	text-transform: uppercase;
+	border: 3px solid @color_blue;
+	padding: 15px 26px;
+	border-radius: 2px;
+	background-image: none; 
+	background: @color_blue;
+	cursor: pointer;
+}
 
 }
-@media(max-width:660px){
-    
-        #blog{ 
-            background-color: #ffffff;
-            background: linear-gradient(#F9FFF2,rgb(131, 161, 243),#F9FFF2);
-            height: 400px;
-
-
-    }
+	@media (max-width:660px){
+            #blog{ 
+	            background-color: #ffffff;
+	            background: linear-gradient(#F9FFF2,rgb(131, 161, 243),#F9FFF2);
+	            height: 400px;
+}
 }

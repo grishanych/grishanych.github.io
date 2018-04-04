@@ -1,166 +1,163 @@
 #offer {
-height: 667px;
-overflow: hidden;
-// background: #292929;
-// border: 1px solid red;
-background:  url(../images/offer/bg.jpg);
-background-repeat: no-repeat;
-background-position: top center;
-// background-size: cover;
+	height: 667px;
+	overflow: hidden;
+	background:  url(../images/offer/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
 
 
 .offer_text{
-height: 215px;
-align-self: stretch;  //Блок растянут, занимая все доступное место по поперечной оси
-// border: 2px solid red;
-justify-content: flex-start;
-flex-direction: row;
-display: flex;
+	height: 215px;
+	align-self: stretch;  
+	justify-content: flex-start;
+	flex-direction: row;
+	display: flex;
 
-// max-width: 1170px;
 .offer_wave{
-position: absolute;
-margin: 146px 0 0 0;
+	position: absolute;
+	margin: 146px 0 0 0;
 }   
 
 h1{
-position: absolute;
-font-family: "Open Sans";
-font-weight: 700;
-font-size: 20px;
-line-height: 42.73px;
-letter-spacing:  2.34px;
-color: #2c2e37;
-text-transform: uppercase;
-padding: 194px 0 0 0;
+	position: absolute;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 42.73px;
+	letter-spacing:  2.34px;
+	color: #2c2e37;
+	text-transform: uppercase;
+	padding: 194px 0 0 0;
 }
 
 h2{
 
-color: #949494;
-font-family: "Open Sans";
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-padding: 260px 0 0 0;
+	color: #949494;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	padding: 260px 0 0 0;
 
 }
 }
 
 .lock-locked{
-position: absolute;
-margin:197px 0 0 0px; 
+	position: absolute;
+	margin:197px 0 0 0px; 
 }
 p{
-position: absolute;
-margin:190px 0 0 20px; 
-color: #36aeea;
-font-family: "Open Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 34px;
-/* Text style for "* Your dat" */
-letter-spacing: 0.28px;
+	position: absolute;
+	margin:190px 0 0 20px; 
+	color: @color_blue;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 34px;
+	letter-spacing: 0.28px;
 
 }
 
 
 .form{
-
-// display: table;
-margin-top: 130px;
-border-radius: 5px;
+	margin-top: 130px;
+	border-radius: 5px;
 }
 
 .form input{
-float: left;
+	float: left;
 }
 
 .form input[type="text"] {
-padding: 0; 
-border: 0;
-width: 304px;
-margin-right: 2px;
-font-family: 'Open Sans';
-font-size: 16px;
-font-weight: 400;
-color: #848484;
-border-radius: 2px;
-padding: 12px 20px 13px 20px;
-box-sizing: border-box; /*ширина,в яку вже включені paddingи*/
+	padding: 0; 
+	border: 0;
+	width: 304px;
+	margin-right: 2px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400;
+	color: #848484;
+	border-radius: 2px;
+	padding: 12px 20px 13px 20px;
+	box-sizing: border-box;
 }				
 .form input[type="submit"]{
-color: #fff;
-background: #36aeea;
-border: 0;
-border-radius: 3px;
-font-family: "Open Sans";
-font-weight: 600;
-font-size: 16px;
-letter-spacing: 3px;
-color: #ffffff;
-text-transform: uppercase;
-padding: 12px 35px 13px 35px;
-cursor: pointer;
+	color: @color_white;
+	background: @color_blue;
+	border: 0;
+	border-radius: 3px;
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 12px 35px 13px 35px;
+	cursor: pointer;
 }
-@media(max-width:709px){
-.form {
-margin:150px 0;
-}
-}
-@media(max-width:628px){
-.form {
-margin:150px 0;
-}
-}
-@media(max-width:400px){
-.form {
-margin:200px 0;
-}
-}
-@media(max-width:628px){
-.form input[type="text"]{
-// border: 1px solid #36aeea;
-display: block;
-float: none;
-margin-bottom: 5px;
-}}
 
-@media(max-width:320px){
-.form input[type="text"]{
-width: 280px;
-}}
+@media (max-width:709px){
+	.form {
+		margin:150px 0;
+}
+}
+
+@media (max-width:628px){
+	.form {
+		margin:150px 0;
+}
+}
+
+@media (max-width:400px){
+	.form {
+		margin:200px 0;
+}
+}
+
+@media (max-width:628px){
+	.form input[type="text"]{
+		display: block;
+		float: none;
+		margin-bottom: 5px;
+}
+}
+
+@media (max-width:320px){
+	.form input[type="text"]{
+		width: 280px;
+}
+}
 
 
-@media(max-width:824px){
-p{
-margin:220px 0 0 20px;
+@media (max-width:824px){
+	p{
+		margin:220px 0 0 20px;
 }
 .lock-locked{
-margin:227px 0 0 0;
+	margin:227px 0 0 0;
 }
 
 }
-@media(max-width:709px){
-p{
-margin:240px 0 0 20px;
+@media (max-width:709px){
+	p{
+		margin:240px 0 0 20px;
 }
 .lock-locked{
-margin:247px 0 0 0;
+	margin:247px 0 0 0;
 }
 }
-@media(max-width:628px){
-p{
-margin:295px 0 0 20px;
+@media (max-width:628px){
+	p{
+		margin:295px 0 0 20px;
 }
 .lock-locked{
-margin:303px 0 0 0;
+	margin:303px 0 0 0;
 }
 }
 
-@media(max-width:400px){
-p{
-margin:350px 0 0 20px;
+@media (max-width:400px){
+	p{
+		margin:350px 0 0 20px;
 }
 .lock-locked{
 margin:353px 0 0 0;
