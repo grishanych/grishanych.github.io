@@ -1,0 +1,541 @@
+html, body {
+    overflow-x: hidden;
+} 
+
+.center-block-main {
+    max-width: 1170px; 
+    margin: 0 auto; 
+}
+
+header {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden; 
+    background: url(../images/header/logo2.png),url(../images/header/bgimage1.jpg);
+    background-repeat:no-repeat, no-repeat;
+    background-position: top, center ;
+    background-size: contain, auto;
+}
+
+@media (max-width:660px){
+    header{ 
+    background-color: @color_white;
+    background: url(../images/header/bgimage2.jpg);
+    background-repeat: repeat;
+    background-size: cover ;
+    opacity: 2;
+}
+}
+
+@media (max-width: 660px){
+    #center-block  {
+    padding: 15px 0 0 12px;
+}
+}
+
+.logo{
+    cursor: pointer;
+}
+
+#nav_flex{
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background: black;
+    position: fixed;
+}
+
+.menu{
+    margin:0 auto;
+    display: flex;
+    width: 1120px;
+    overflow: hidden;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul{
+
+        display: flex;
+}
+
+    @media (max-width:500px){
+        ul{
+            display: block;
+            float: left;
+}}
+    @media( max-width: 500px){
+        ul{
+        display: none;
+}
+}
+}
+
+li {
+    display: inline;
+
+    a { 
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #9daeb6;
+    margin-left: 22px;
+        &:hover {
+        color:#fff;
+        border-bottom: 2px solid @color_blue;
+        text-decoration: none;
+}
+}
+}
+
+
+@media (max-width: 800px){
+    .menu  {
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+}
+
+@media (max-width:800px){
+    .menu li  a{
+        flex-wrap: wrap;
+        margin-left: 10px;
+}
+}
+
+@media (max-width: 683px){
+    .menu  {
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+}
+
+
+.btn_call {
+    display: flex;
+    align-self: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 12px;
+    color: @color_blue;
+    text-transform: uppercase;
+    border: 3px solid @color_blue;
+    padding: 19px 46px 18px 46px;
+    border-radius: 4px;
+    background-image: none; 
+    background: transparent;
+    letter-spacing: 1.92px;
+    text-decoration: none;
+        &:hover {
+        color:#fff;
+        text-decoration: none;
+}
+}
+
+
+@media (max-width: 1150px){
+    .btn_call{
+        padding: 10px 26px 9px 26px;
+}
+}
+
+@media (max-width: 840px){
+    .btn_call{
+        padding: 10px 10px 9px 26px;
+}
+}
+
+
+@media (max-width: 629px){
+    .btn_call{
+        padding: 10px 3px 9px 10px;
+}
+}
+
+@media (max-width: 500px){
+    .btn_call{
+        margin-top: 20px;
+        padding: 10px 3px 9px 10px;
+}
+}
+
+#center-block{
+    width: 1134px;
+    height: 340px;
+    margin: 120px auto;
+
+
+h1 {
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #ffffff;
+    padding: 40px 0 0 34px;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-family: 'Bringin';
+    font-size: 66px;
+    font-weight: Regular;
+    color: #56c7ff;
+    margin: -35px 0 0 34px;
+}
+
+h3{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #ffffff;
+    padding:  0 0 0 34px;
+    line-height: 29px;
+}
+
+button {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    float: left;
+    margin:  0 0 0 34px;
+    text-transform: uppercase;
+    border: 3px solid @color_blue;
+    padding: 22px 72px;
+    border-radius: 1.5px;
+    background-image: none; 
+    background: @color_blue;
+    cursor: pointer;
+}
+}
+
+@media (max-width:660px){
+    #center-block{
+        margin: 40px auto;
+}
+}
+
+
+
+
+@media (max-width: 1150px){
+    #center-block h1 {
+        font-size: 40px;
+        padding: 40px 0 0 44px;
+    }
+    #center-block h2 {
+        font-size: 50px;
+        padding-left:13px;
+    }
+    #center-block h3 {
+        font-size: 16px;
+        padding-left: 44px;
+    }
+    #center-block button {
+        font-size: 14px;
+        padding: 18px 68px;
+
+}
+}
+
+@media (max-width: 990px){
+    #center-block h1 {
+        font-size: 32px;
+        padding: 40px 0 0 19px;
+    }
+    #center-block h2 {
+        font-size: 44px;
+        margin: -25px 0 0 13px;
+    }
+    #center-block h3 {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+    #center-block button {
+        font-size: 14px;
+        padding: 14px 24px;
+        margin-left: 20px;
+}
+}
+
+@media (max-width: 500px){
+    #center-block h1 {
+        font-size: 26px;
+        padding: 15px 0 0 12px;
+    }
+    #center-block h2 {
+        font-size: 36px;
+        margin-left:5px;
+    }
+    #center-block h3 {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+    #center-block button {
+        font-size: 14px;
+        padding: 14px 12px;
+        margin-left: 12px;
+
+}
+}
+
+@media (max-width: 425px){
+    #center-block h1 {
+        font-size: 26px;
+        padding: 15px 0 0 12px;
+    }
+    #center-block h2 {
+        font-size: 36px;
+        margin-left:5px;
+    }
+    #center-block h3 {
+        font-size: 14px;
+        padding-left: 12px;
+    }
+    #center-block button {
+        font-size: 14px;
+        padding: 14px 12px;
+        margin-left: 12px;
+    
+}
+}
+
+@media (max-width: 380px){
+    #center-block h1 {
+        font-size: 24px;
+        padding: 15px 0 0 12px;
+    }
+    #center-block h2 {
+        font-size: 32px;
+        margin-left:5px;
+    }
+    #center-block h3 {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    #center-block button {
+        font-size: 14px;
+        padding: 14px 12px;
+        margin-left: 12px;
+}
+}
+
+/* стили модального вікна */
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    margin: 0;
+    width: 900px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #FAFAFA;
+    z-index: 12;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    font: 14px/18px 'Tahoma', Arial, sans-serif;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition:  0.7s;
+    -moz-transition:  0.7s;
+    -o-transition:  0.7s;
+    transition:  0.7s;
+}
+
+
+/* активуєм модальний блок */
+.overlay:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+
+/* кнопка закриття */
+.close {
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    padding: 0;
+    border: 5px solid red;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: red;
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all 2s ;
+    -moz-transition: all 2s ;
+    -ms-transition: all 2s ;
+    -o-transition: all 2s ;
+    transition: all  2s;
+}
+.close:before {
+    color: #fff;
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);    
+}
+/* изображения внутри окна */
+.popup img {
+    width: 100%;
+    height: auto;
+
+}
+/* миниатюры слева/справа */
+.pic-left, 
+.pic-right {
+    width: 25%;
+    height: auto;
+}
+.pic-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+.pic-right {
+    float: right;
+    margin: 5px 0 5px 15px;
+} 
+
+.popup h2,
+span { /* заголовок 2 */
+    margin: 0;
+    color: #000;
+    padding: 5px 0px 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #adadad;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+span{
+    color:red;
+}
+.popup p {
+    margin: 0; 
+    padding: 5px 0;
+} 
+
+
+@media (max-width: 990px){
+    .popup {
+        width: 500px;
+}
+    iframe{
+        width: 460px;
+        height: 250px;
+}
+}
+
+@media (max-width: 500px){
+    .popup {
+        width: 300px;
+}
+    iframe{
+        width: 260px;
+}
+.popup h2, span {
+    font-size: 16px;
+}
+.close,  .close:before {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+}
+}
+
+@media (max-width: 680px) {
+    nav ul { 
+        display: none; 
+}
+    nav select {
+        display: inline-block; 
+}
+}
+
+
+.dropdown{
+    display: none;
+
+
+}
+
+@media ( max-width: 500px){
+    .dropdown{
+         display: inline-block;  
+}
+}
+
+.dropbtn {
+    background-color: @color_blue;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 6px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    text-transform: uppercase;
+    position: fixed;
+    margin-top: -15px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: @color_blue;
+    opacity: 0.95;
+    width: 95px;
+    border-radius: 6px;
+    list-style-type: none;
+    padding-top: 1px;
+    position: fixed;
+    margin-top: 25px;
+}
+
+.dropdown-content a {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
